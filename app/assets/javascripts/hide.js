@@ -1,7 +1,7 @@
 let el = document.getElementById("hide_this")
 
-function hideWhenClicked(el) {
-  el.addEventListener(click, function{
-    el.style.display = "none";
-  })
+function hideWhenClicked() {
+  document.getElementById("hide_this").onclick = function() {
+    document.getElementById("hide_this").style.display = "none";
+  }
 }
